@@ -60,3 +60,4 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 // Initialize
 startCamera().then(detectLoop);
 
+
