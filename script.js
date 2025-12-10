@@ -19,7 +19,7 @@ async function sendFrameToBackend(frameBlob) {
     let formData = new FormData();
     formData.append("file", frameBlob);
 
-    let res = await fetch("http://127.0.0.1:8000/detect", { // backend URL
+    let res = await fetch("https://backend-1-fwik.onrender.com", { // backend URL
         method: "POST",
         body: formData
     });
@@ -59,3 +59,4 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
 // Initialize
 startCamera().then(detectLoop);
+
